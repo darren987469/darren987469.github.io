@@ -9,33 +9,38 @@
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-title: Your awesome title
-email: your-email@example.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+
+# Name of your site (displayed in the header)
+name: Darren
+
+# Short bio or description (displayed in the header)
+description: Ruby on Rails Full Stack Developer from Taipei, Taiwan
+
+# URL of your avatar or profile pic (you could use your GitHub profile pic)
+avatar: https://avatars2.githubusercontent.com/u/5189060?s=400&u=67747c8a7cdefbef3b0d2770886720cf01c8890d&v=4
+
+# You can find your shortname on the Settings page of your Disqus account
+disqus: darren987469
+
+# Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
+google_analytics: UA-109338089-1
+
+# Used for Sitemap.xml and your RSS feed
+url: http://darren987569.github.io
 
 # Build settings
+permalink: /:title/
 markdown: kramdown
-theme: minima
 plugins:
-  - jekyll-feed
+  - jekyll-fee
+  - jekyll-sitemap
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
+exclude:
+  - Gemfile
+  - Gemfile.lock
 #   - node_modules
 #   - vendor/bundle/
 #   - vendor/cache/

@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+
+{% for post in site.posts %}
+  <div class="w3-card-4 w3-margin w3-white">
+    <div class="w3-container">
+      <h3>{{ post.title }} <small class="w3-text-grey w3-opacoty">{{ post.subtitle }}</small></h3>
+      <p>{{ post.excerpt }}</p>
+      <p>
+        <a href="{{ site.baseurl }}{{ post.url }}" class="w3-button w3-white w3-border">
+          Read More
+        </a>
+        <span class="date" style="padding: 9px 0; float: right">
+          Written on {{ post.date | date: "%B %e, %Y" }}
+        </span>
+      </p>
+    </div>
+  </div>
+{% endfor %}

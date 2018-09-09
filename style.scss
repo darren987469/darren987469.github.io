@@ -1,0 +1,46 @@
+---
+---
+
+@import "variables";
+
+body {
+	background: $white;
+  font: 18px/1.4 $helvetica;
+  color: $darkGray;
+}
+
+a {
+  color: $blue;
+  text-decoration: none;
+	cursor: pointer;
+  &:hover, &:active {
+    color: $blue !important;
+  }
+}
+
+.date {
+  font-style: italic;
+  color: $gray;
+}
+
+.post h1,h2,h3,h4,h5,h6 {
+  font-weight: bold;
+}
+
+.skill {
+  ul {
+    list-style-type: none;
+    padding: 0 10px;
+  }
+  .skill-name {
+    width: 60%;
+  }
+  .skill-score {
+    width: 40%;
+    float: right;
+  }
+}
+// Settled on moving the import of syntax highlighting to the bottom of the CSS
+// ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
+@import "highlights";
+@import "svg-icons";

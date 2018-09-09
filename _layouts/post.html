@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+<div class="w3-card-4 w3-margin w3-white">
+  <div class="w3-container">
+    <div class="post">
+      <h1>{{ page.title }} <small class="w3-text-grey w3-opacity">{{ page.subtitle }}</small></h1>
+      <hr>
+      <div>{{content}}</div>
+      <h3>{{ post.title }}</h3>
+      <div class="date w3-margin-bottom">
+        Written on {{ page.date | date: "%B %e, %Y" }}
+      </div>
+      {% include disqus.html %}
+    </div>
+  </div>
+</div>
