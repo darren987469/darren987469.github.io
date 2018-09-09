@@ -5,8 +5,6 @@ subtitle:
 tags: database index
 ---
 
-# What is Index?
-
 資料庫預設搜尋會 row by row 直到找到目標為止，當有很多筆資料時（很多 rows ），且想搜尋的結果只有少數幾筆時，這是非常沒有效率的做法。Index 的概念可以在書本的目錄看到，目錄分了章節，如此一來想找某個特定主題時，不用一頁頁去翻，可以透過目錄來找到想要的主題。
 
 一旦 index 建立後，系統會自動維護它，資料庫會根據 query 來判斷使用 index 是否會讓搜尋更有效率。Index 可以幫助 `UPDATE`, `DELETE`, `SELECT` (with conditions) 更有效率。建立 Index 需要一段時間，建立期間可以允許資料庫的讀取，但是寫入動作如 `INSERT`, `UPDATE`, `DELETE` 則須等到 index 建立完成後才可使用，當然也可以同時建立 index 和進行寫入動作，不過這就是另一個主題了。
