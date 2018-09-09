@@ -1,48 +1,44 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+# visit https://github.com/mojombo/jekyll/wiki/Configuration for more settings
 
-# Site settings
-
-# Name of your site (displayed in the header)
-name: Darren
-
-# Short bio or description (displayed in the header)
-description: Ruby on Rails Full Stack Developer from Taipei, Taiwan
-
-# URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://avatars2.githubusercontent.com/u/5189060?s=400&u=67747c8a7cdefbef3b0d2770886720cf01c8890d&v=4
-
-# You can find your shortname on the Settings page of your Disqus account
-disqus: darren987469
-
-# Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-google_analytics: UA-109338089-1
-
-# Used for Sitemap.xml and your RSS feed
-url: http://darren987569.github.io
-
-# Build settings
-permalink: /:title/
-markdown: kramdown
-plugins:
-  - jekyll-feed
-  - jekyll-sitemap
-
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
+paginate: 10 # pagination based on number of posts
+paginate_path: "page:num"
 exclude:
   - Gemfile
   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+  - README.md
+highlighter: rouge
+markdown: kramdown
+disqus: darren987469
+google_analytics: darren987469
+title: darren987469
+
+defaults:
+  -
+    scope:
+      path: "" # empty string for all files
+    values:
+      title: darren987469
+
+description: Stylish Jekyll Theme
+author:
+  name: darren987469
+  email: darren987469@gmail.com
+  github: darren987469
+  twitter:
+  pinterest:
+  linkedin: darren987469
+  bio:
+  email_md5:
+
+rss_path: feed.xml
+categories_path: categories.html
+tags_path: tags.html
+
+# set it as url of an image
+# sidebar_background_image: https://www.dropbox.com/s/g9h23zrycedxtk5/sky.png?raw=1
+
+BASE_PATH:
+
+permalink: /:title/
+plugins:
+  - jekyll-paginate

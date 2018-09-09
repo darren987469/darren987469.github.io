@@ -1,54 +1,18 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+---
+theme :
+  name : dbyll
+---
+{% include default.html %}
 
-    {% include meta.html %}
+{% if site.google_analytics %}
+<!-- Asynchronous Google Analytics snippet -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-    <!--[if lt IE 9]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
-    <script src="https://www.w3schools.com/lib/w3.js"></script>
-    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
-  </head>
-
-  <body class="w3-light-grey">
-    <div class="w3-content" style="max-width: 1400px">
-      <!-- Fixed Nav Bar -->
-      <div class="w3-top">
-        <div class="w3-bar w3-dark-grey w3-card-4">
-          <a href="{{ site.baseurl }}/" class="w3-bar-item w3-button w3-mobile">Blog</a>
-          <a href="{{ site.baseurl }}/about" class="w3-bar-item w3-button w3-mobile">About</a>
-        </div>
-      </div>
-      <!-- Grid -->
-      <div class="w3-row" style="margin-top: 48px;">
-        <div class="w3-col l8 s12">
-            {{ content }}
-        </div>
-        <div class="w3-col l4">
-          <!-- About Card -->
-          <div class="w3-card w3-margin w3-light-grey">
-            <div class="w3-container">
-              <img src="{{ site.avatar }}" style="width: 100px; border-radius: 200px; display: block; margin: 10px auto 0 auto;">
-              <h4 class="w3-center"><b>{{ site.name }}</b></h4>
-            </div>
-            <div class="w3-container w3-white">
-              <p>{{ site.description }}</p>
-              {% include svg-icons.html %}
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Footer -->
-    <!-- <footer class="w3-container w3-dark-grey w3-padding-8 w3-margin-top">
-    </footer> -->
-
-    {% include analytics.html %}
-  </body>
-</html>
+  ga('create', '{{ site.google_analytics }}', 'auto');
+  ga('send', 'pageview');
+</script>
+{% endif %}
