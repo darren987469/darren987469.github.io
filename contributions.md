@@ -4,6 +4,7 @@ title: Contributions in Open Source Projects
 ---
 
 * [ruby-grape/grape](https://github.com/ruby-grape/grape)
+  * [#1791, Support more options in desc block](https://github.com/ruby-grape/grape/pull/1791)
   * [#1788, Fix route requirements bug](https://github.com/ruby-grape/grape/pull/1788)
   * [#1776, Validates response processed by exception handler](https://github.com/ruby-grape/grape/pull/1776), [commit](https://github.com/ruby-grape/grape/commit/c117bff7d22971675f4b34367d3a98bc31c8fc02)
 * [rails/rails](https://github.com/rails/rails)
