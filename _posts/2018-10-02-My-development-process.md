@@ -33,9 +33,13 @@ More use cases:
 
 * User adds product to collection
 * User views collections
+* Customer views collections
 * User creates collection
 * User updates collection setting
 * User deletes collection
+* ...
+
+![](../assets/images/2018-10-02-use-case-diagram.png)
 
 ## Database schema design
 
