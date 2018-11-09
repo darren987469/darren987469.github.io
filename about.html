@@ -72,15 +72,15 @@ permalink: /about/
       Skills
     </h2>
     <div class="w3-row">
-      <div class="w3-col s6">
+      <div class="w3-col s6 w3-padding">
         <h6>Framework, Library</h6>
-        <ul id="skill-left"></ul>
+        <ul id="skill-left" style="padding: 0"></ul>
         <script>
           function addSkill(name, score, isMoreSkill=false) {
             return(`
               <li class="${isMoreSkill ? 'more-skill' : null}" style="display: ${isMoreSkill ? 'none' : 'block'}">
                 <span class="skill-name">${name}</span>
-                <span class="skill-score">
+                <span class="skill-score w3-right">
                   <span class="fa fa-star ${score > 0 ? 'w3-text-red' : 'w3-text-light-grey'}"></span>
                   <span class="fa fa-star ${score > 1 ? 'w3-text-red' : 'w3-text-light-grey'}"></span>
                   <span class="fa fa-star ${score > 2 ? 'w3-text-red' : 'w3-text-light-grey'}"></span>
@@ -104,9 +104,9 @@ permalink: /about/
           })
         </script>
       </div>
-      <div class="w3-col s6">
+      <div class="w3-col s6 w3-padding">
         <h6>Language</h6>
-        <ul id="skill-right"></ul>
+        <ul id="skill-right" style="padding: 0"></ul>
         <script>
           var list = document.getElementById('skill-right');
           [
