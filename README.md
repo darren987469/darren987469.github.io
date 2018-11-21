@@ -1,5 +1,7 @@
 # Blog of Darren
 
+<a href="https://sourcerer.io/darren987469"><img src="https://img.shields.io/badge/Ruby-221%20commits-orange.svg" alt=""></a>
+
 ### Current Projects
 
 * [Todo App](https://github.com/darren987469/todos) - Cooperate tasks with members! (use actioncable websocket)
