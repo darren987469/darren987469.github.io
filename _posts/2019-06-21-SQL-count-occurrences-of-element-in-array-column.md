@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [SQL] Count occurrence of element in array column
+title: Count occurrence of element in array column
 subtitle:
 tags: SQL
 ---

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [SQL] Count discount code usage
+title: Count discount code usage
 subtitle:
 tags: SQL
 ---
