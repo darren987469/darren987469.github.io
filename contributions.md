@@ -18,3 +18,5 @@ title: Contributions in Open Source Projects
   * [#704](https://github.com/ruby-grape/grape-swagger/pull/704): Fix typo and sentence in deprecated warning.
 * [jondot/sneakers](https://github.com/jondot/sneakers)
   * [#366](https://github.com/jondot/sneakers/pull/366): Add push message with ruby in README.
+* [t-k/gmo-payment-ruby](https://github.com/t-k/gmo-payment-ruby)
+  * [#45](https://github.com/t-k/gmo-payment-ruby/pull/45): Support secure tran 認証後決済実行.
