@@ -6,7 +6,7 @@ tags: trie
 ---
 
 Leetcode:
-medium, https://leetcode.com/problems/implement-trie-prefix-tree/
+* medium, [208.Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/)
 
 ```java
 class Trie {
@@ -45,5 +45,5 @@ class Trie {
 ```
 
 More:
-medium, https://leetcode.com/problems/design-add-and-search-words-data-structure/
-hard,   https://leetcode.com/problems/word-search-ii/
+* medium, [211. Design Add and Search Words Data Structure](https://leetcode.com/problems/design-add-and-search-words-data-structure/)
+* hard, [212. Word Search II](https://leetcode.com/problems/word-search-ii/)
