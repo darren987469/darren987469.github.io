@@ -56,3 +56,6 @@ public int bitCount(int n) {
     return count;
 }
 ```
+
+More:
+* hard, [51. N-Queens](https://leetcode.com/problems/n-queens/)
