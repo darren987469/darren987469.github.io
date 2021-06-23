@@ -20,3 +20,5 @@ title: Contributions in Open Source Projects
   * [#366](https://github.com/jondot/sneakers/pull/366): Add push message with ruby in README.
 * [t-k/gmo-payment-ruby](https://github.com/t-k/gmo-payment-ruby)
   * [#45](https://github.com/t-k/gmo-payment-ruby/pull/45): Support secure tran 認証後決済実行.
+* [OAI/OpenAPI-Specification](https://github.com/OAI/OpenAPI-Specification)
+  * [#1670](https://github.com/OAI/OpenAPI-Specification/pull/1670): Fix example response reference.
