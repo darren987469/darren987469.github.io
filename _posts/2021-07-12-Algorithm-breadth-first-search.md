@@ -9,7 +9,7 @@ Leetcode:
 * medium, [1926. Nearest Exit from Entrance in Maze](https://leetcode.com/problems/nearest-exit-from-entrance-in-maze/)
 
 ```java
-int[][] dirs = {{1,0},{-1,0},{0,1},{0,-1}};
+int[][] dirs = new int[][]{{1,0},{-1,0},{0,1},{0,-1}};
 public int nearestExit(char[][] maze, int[] entrance) {
     int rows = maze.length, cols = maze[0].length;
     Queue<int[]> queue = new LinkedList<>();
