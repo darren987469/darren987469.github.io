@@ -6,6 +6,7 @@ tags: algorithm breadth-first-search
 ---
 
 Leetcode:
+* medium, [542. 01 Matrix](https://leetcode.com/problems/01-matrix/)
 * medium, [1926. Nearest Exit from Entrance in Maze](https://leetcode.com/problems/nearest-exit-from-entrance-in-maze/)
 
 ```java
