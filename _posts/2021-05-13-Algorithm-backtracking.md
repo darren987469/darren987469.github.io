@@ -6,7 +6,30 @@ tags: backtracking
 ---
 
 Leetcode:
-* medium, [78. Subsets]](https://leetcode.com/problems/subsets/)
+* medium, [78. Subsets](https://leetcode.com/problems/subsets/)
+* medium, [90. subsets II](https://leetcode.com/problems/subsets-ii/)
+
+### backtrack
+
+```java
+List<List<Integer>> ans = new ArrayList<>();
+public List<List<Integer>> subsetsWithDup(int[] nums) {
+    Arrays.sort(nums);
+    backtrack(nums, new ArrayList<>(), 0);
+    return ans;
+}
+
+public void backtrack(int[] nums, List<Integer> cur, int first) {
+    ans.add(new ArrayList<>(cur));
+    for(int i = first; i < nums.length; i++) {
+        if(i != first && i > 0 && nums[i] == nums[i-1])
+            continue;
+        cur.add(nums[i]);
+        backtrack(nums, cur, i+1);
+        cur.remove(cur.size() -1);
+    }
+}
+```
 
 ### bitwise
 
