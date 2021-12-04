@@ -9,7 +9,7 @@ exclude:
 highlighter: rouge
 markdown: kramdown
 disqus: darren987469
-google_analytics: darren987469
+ga_measurement_id: G-VHY1PB145H
 title: darren987469
 
 defaults:
