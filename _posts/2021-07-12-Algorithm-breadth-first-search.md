@@ -1,13 +1,15 @@
 ---
 layout: post
-title: Algorithm - breadth first search
+title: Algorithm - breadth first search, depth first search
 subtitle:
-tags: algorithm breadth-first-search
+tags: algorithm breadth-first-search depth-first-search
 ---
 
 Leetcode:
 * medium, [542. 01 Matrix](https://leetcode.com/problems/01-matrix/)
 * medium, [1926. Nearest Exit from Entrance in Maze](https://leetcode.com/problems/nearest-exit-from-entrance-in-maze/)
+* medium, [133. Clone Graph](https://leetcode.com/problems/clone-graph/)
+* hard, [847. Shortest Path Visiting All Nodes](https://leetcode.com/problems/shortest-path-visiting-all-nodes/)
 
 ```java
 public int nearestExit(char[][] maze, int[] entrance) {
@@ -40,4 +42,3 @@ public int nearestExit(char[][] maze, int[] entrance) {
     return -1;
 }
 ```
-

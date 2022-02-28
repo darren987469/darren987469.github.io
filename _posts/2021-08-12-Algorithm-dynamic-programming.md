@@ -29,5 +29,5 @@ public boolean canPartition(int[] nums) {
     return dp[half];
 }
 ```
-
+* medium, [279. Perfect Squares](https://leetcode.com/problems/perfect-squares/)
 * hard, [312. Burst Balloons](https://leetcode.com/problems/burst-balloons/submissions/)

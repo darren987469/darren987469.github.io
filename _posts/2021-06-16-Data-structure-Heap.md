@@ -5,6 +5,12 @@ subtitle:
 tags: heap
 ---
 
+Video: [Heap - Heap Sort - Heapify - Priority Queues](https://www.youtube.com/watch?v=HqPJF2L5h9U)
+create a heap: `O(nlogn)`
+heapify: `O(n)`
+insertion: `O(logn)`
+deletion: `O(logn)`
+
 Leetcode:
 * medium, [373. Find K Pairs with Smallest Sums](https://leetcode.com/problems/find-k-pairs-with-smallest-sums/)
 

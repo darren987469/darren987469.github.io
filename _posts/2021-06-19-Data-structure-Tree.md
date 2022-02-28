@@ -68,3 +68,9 @@ class NumArray {
     }
 }
 ```
+
+Full binary tree
+full binary tree can be defined as a binary tree in which all the nodes have two children except the leaf nodes.
+
+Complete binary tree
+A binary tree is said to be a complete binary tree when all the levels are completely filled except the last level, which is filled from the left.
