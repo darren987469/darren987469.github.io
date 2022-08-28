@@ -6,10 +6,13 @@ tags: algorithm breadth-first-search depth-first-search
 ---
 
 Leetcode:
-* medium, [542. 01 Matrix](https://leetcode.com/problems/01-matrix/)
-* medium, [1926. Nearest Exit from Entrance in Maze](https://leetcode.com/problems/nearest-exit-from-entrance-in-maze/)
+* medium, [542. 01 Matrix](https://leetcode.com/problems/01-matrix/)`
 * medium, [133. Clone Graph](https://leetcode.com/problems/clone-graph/)
+* medium, [785. Is Graph Bipartite?](https://leetcode.com/problems/is-graph-bipartite/)
+* medium, [1306. Jump Game III](https://leetcode.com/problems/jump-game-iii/)
+* medium, [1926. Nearest Exit from Entrance in Maze](https://leetcode.com/problems/nearest-exit-from-entrance-in-maze/)
 * hard, [847. Shortest Path Visiting All Nodes](https://leetcode.com/problems/shortest-path-visiting-all-nodes/)
+* hard, [1192. Critical Connections in a Network](https://leetcode.com/problems/critical-connections-in-a-network/)
 
 ```java
 public int nearestExit(char[][] maze, int[] entrance) {

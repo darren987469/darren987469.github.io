@@ -7,6 +7,10 @@ tags: stack
 
 Leetcode:
 * hard, [84. Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/)
+* medium, [316. Remove Duplicate Letters](https://leetcode.com/problems/remove-duplicate-letters/)
+* medium, [402. Remove K Digits](https://leetcode.com/problems/remove-k-digits/)
+* medium, [946. Validate Stack Sequences](https://leetcode.com/problems/validate-stack-sequences/)
+* medium, [1081. Smallest Subsequence of Distinct Characters](https://leetcode.com/problems/smallest-subsequence-of-distinct-characters/)
 
 ```java
 public int largestRectangleArea(int[] heights) {

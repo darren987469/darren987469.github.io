@@ -47,4 +47,6 @@ public List<List<Integer>> kSmallestPairs(int[] nums1, int[] nums2, int k) {
 
 
 More:
+* medium, [1029. Two City Scheduling](https://leetcode.com/problems/two-city-scheduling/)
 * hard, [1439. Find the Kth Smallest Sum of a Matrix With Sorted Rows](https://leetcode.com/problems/find-the-kth-smallest-sum-of-a-matrix-with-sorted-rows/)
+* hard, [1675. Minimize Deviation in Array](https://leetcode.com/problems/minimize-deviation-in-array/)

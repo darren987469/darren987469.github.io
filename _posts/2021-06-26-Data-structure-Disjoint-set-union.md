@@ -9,6 +9,7 @@ tags: disjoint-set-union
 
 Leetcode:
 * medium, [684. Redundant Connection](https://leetcode.com/problems/redundant-connection/)
+* medium, [1202. Smallest String With Swaps](https://leetcode.com/problems/smallest-string-with-swaps/)
 
 ```java
 class DSU {
