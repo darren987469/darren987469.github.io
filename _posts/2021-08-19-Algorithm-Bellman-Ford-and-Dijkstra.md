@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Algorithm - Bellman Ford and Dijkstra
+title: Algorithms for shortest path
 subtitle:
-tags: Bellman-Ford, Dijkstra
+tags: Bellman-Ford, Dijkstra, Floyd Warshall
 ---
 
 Leetcode:
@@ -96,9 +96,24 @@ public double maxProbability(int n, int[][] edges, double[] succProb, int start,
 }
 ```
 
+### Floyd Warshall
+Time complexity: `O(n^3)`
+Space complexity: `O(n^2)`
+
+medium, [1334. Find the City With the Smallest Number of Neighbors at a Threshold Distance](https://leetcode.com/problems/find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance/)
+
+```java
+for (int k = 0; k < n; ++k)
+    for (int i = 0; i < n; ++i)
+        for (int j = 0; j < n; ++j)
+            dis[i][j] = Math.min(dis[i][j], dis[i][k] + dis[k][j]);
+```
+
+
 Similar problems:
 
 * hard 407. Trapping Rain Water II
 * medium [743. Network Delay Time](https://leetcode.com/problems/network-delay-time/submissions/)
 * medium [787. Cheapest Flights Within K Stops](https://leetcode.com/problems/cheapest-flights-within-k-stops/)
 * medium [1631. Path With Minimum Effort](https://leetcode.com/problems/path-with-minimum-effort/)
+* medium [1976. Number of Ways to Arrive at Destination](https://leetcode.com/problems/number-of-ways-to-arrive-at-destination/)
