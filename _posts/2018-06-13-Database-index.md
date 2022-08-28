@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Database indexes
+title: Database indexes and isolation levels
 subtitle:
-tags: database index
+tags: database index, isolation
 ---
 
 資料庫預設搜尋會 row by row 直到找到目標為止，當有很多筆資料時（很多 rows ），且想搜尋的結果只有少數幾筆時，這是非常沒有效率的做法。Index 的概念可以在書本的目錄看到，目錄分了章節，如此一來想找某個特定主題時，不用一頁頁去翻，可以透過目錄來找到想要的主題。
@@ -49,3 +49,44 @@ Hash index 只能用來處理相等的搜尋，不太建議使用。
 * SELECT * FROM user WHERE a=0 OR b=0;
 * SELECT * FROM user WHERE a>0 AND b=0;
 * SELECT * FROM user WHERE a=0 AND b>0;
+
+### Isolation levels
+
+read committed
+dirty read
+dirty write alice/bob car/invoice, early write has not yet committed but later write overwrite an uncommitted value
+
+snapshot isolation / repeatable read
+nonrepeatable read/read skew, balance 500/500, transfer 600/400
+problem for temporary inconsistency: backup, analytic query and integrity check (long-running read-only query)
+multi-version concurrency control (MVCC)
+
+lost update, 2 concurrent counter increments,
+1. explicit locking
+2. auto detection
+3. compare and set (not work when reading from old snapshot)
+
+write skew, read the same objects then update some of those objects
+doctor shifts at least one onc all
+
+phantom: write in one transaction changes the result of a search query in another transaction
+
+serializability
+1. serial execution
+2. 2 phase locking, index-range lock or next-key locking
+3. serializable snapshot isolation
+pessimistic vs optimistic concurrency control
+
+Rate limit
+1. token bucket(bucket size, refill rate)
+2. leaking bucket(bucket size, outflow rate)
+3. fixed window counter
+4. sliding window log
+5. sliding window counter
+
+Hash tree or Merkle tree
+every non-leaf node is labeled with the hash of the labels or values (in case of leaves) of its children nodes.
+Hash trees allow efficient and secure verification of the contents of large data structures.
+
+bloom filter, possible in set or definitely not in set
+
